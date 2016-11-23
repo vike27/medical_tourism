@@ -1,12 +1,15 @@
 <div class="container-fluid home" style="" id="home">
   <div class="image-container2">
     </br>
-      
-      
+  
     <div class="banner-content">
+      <div>
+       <% flash.each do |key, value| %>
+       <div class="alert alert-info" role="alert" style="width: 450px; margin-left:100px;"><%= value %></div>
+      <% end %>
+      </div>
       <h1 style="font-size:20px; margin-left: 100px; line-height: 1.3; width: 350px; font-weight: 300;">Every year, nearly 2 million new people will develop lung cancer, and over a quarter of a million will die.</h1>    
       <h1 style="font-size:45px; margin-left: 100px; line-height: 1.05; width: 500px; font-weight: 100;">What if the war on cancer had already been won?</h1>
-      
       </br>
     </div>
   </div>
@@ -35,6 +38,11 @@
     <div class="col-md-6" id="aside-about">
       <h1 style="font-size: 26px; font-weight: 300; line-height: 1.2;">Fill out this form to have one our team members contact you with more information on how to gain access to CimaVax</h1>
       </br>
+      <div>
+       <% flash.each do |key, value| %>
+       <div class="alert alert-info" role="alert" style="width: 450px; margin-left:0px; font-size:12px; margin-bottom:10px;"><%= value %></div>
+      <% end %>
+      </div>
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
