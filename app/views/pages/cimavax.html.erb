@@ -1,0 +1,110 @@
+<div class="container-fluid home" style="" id="home">
+  <div class="image-container2">
+    </br>
+  
+    <div class="banner-content">
+      <div>
+       <% flash.each do |key, value| %>
+       <div class="alert alert-info" role="alert" style="width: 450px; margin-left:0px;"><%= value %></div>
+      <% end %>
+      </div>
+      <h1 style="font-size:26px; margin-left: 45px; line-height: 1.3; width: 350px; font-weight: 300;">What if the war on cancer</h1>  
+      <h1 style="font-size:56px; margin-left: 45px; line-height: 1.05; width: 500px; font-weight: 100;">had already been won?</h1>
+      </br>
+    </div>
+  </div>
+
+<div id="about" class="container-fluid" id="about" style="padding-left: 50px;">
+  <div class="row">
+
+    <div class="col-md-6" id="main-about">
+      <h1 style="font-size: 30px; font-weight: 300; line-height: 1.2;"><b><i>CimaVax</i></b></br>The Breakthrough Vaccine For Lung Cancer</h1>
+      
+      <p style="font-size: 15px; line-height: 1.42857143; color: #333;">For over 30 years, the nation of Cuba has treated over 5,000 lung cancer patients at a cost of only $1 per treatment. Using a unique form of treatment called immunotherapy, the vaccine, CimaVax, supercharges the patient’s own immune system to combat the disease - with little to no known side effects.
+      </p>
+    <p style="font-weight: 300; line-height: 1.4; font-size: 21px;">
+    Then, in 2016, the U.S. opened up flights to Cuba - and the rest of the world discovered what only a handful of patients had known for decades.</p>
+    <p style="font-size: 15px; line-height: 1.42857143; color: #333;">In the coming year, nearly 2 million new people will develop lung cancer, and over a quarter of a million will die - but it doesn’t have to be that way.
+    </p>
+    <p style="font-size: 15px; line-height: 1.42857143; color: #333;">We believe that no one should suffer or prematurely die from a disease that can be managed and treated, no matter your condition - and we're here to help.
+    </p>
+  </br>
+    <h2>Who We Are</h2>
+    <p style="font-size: 15px; line-height: 1.42857143; color: #333;">Navigating the Cuban medical system is extremely difficult for foreigners and getting access to the right treatment even more so. We are a team of physicians, scientists and entrepreneurs who want to make it easier for everyone to gain access to these life-saving treatments - without the hassle.
+    </p>
+  </br>
+    <h2>What We Provide</h2>
+    <p style="font-size: 15px; line-height: 1.42857143; color: #333;">We help you with flights, accommodation, travel instructions, process your medical records, connect you with medical personnel upon arrival, analyze your case to get you the best price with local physicians and - most importantly - set you up to receive ample doses of CimaVax for your condition.
+    </p>
+    </div>                                     
+    
+    <div class="col-md-6" id="aside-about">
+      <h1 style="font-size: 26px; font-weight: 300; line-height: 1.2;">Fill out this form to have one of our team members contact you with more information on how to gain access to CimaVax</h1>
+      </br>
+      <div>
+       <% flash.each do |key, value| %>
+       <div class="alert alert-info" role="alert" style="width: 450px; margin-left:0px; font-size:12px; margin-bottom:10px;"><%= value %></div>
+      <% end %>
+      </div>
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fund.errors.count, "error") %> prohibited this fund from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :first_name, "First Name" %><br>
+    <%= f.text_field :first_name, class:"form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :last_name, "Last Name" %><br>
+    <%= f.text_field :last_name, class:"form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email %><br>
+    <%= f.text_field :email, class:"form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Get more information", class:"btn btn-lg btn-primary" %>
+  </div>
+  <p style="font-size:10px;">We will contact you with more information about CIMAVAX and how our process works.</p>
+<% end %>
+</br>
+  <div class="col-md-12">
+    <a href="http://www.theatlantic.com/health/archive/2016/11/cubas-lung-cancer-vaccine/505778/" style="font-size:16px;"><u>"Cuba's Innovative Cancer Vaccine Is Finally Coming to America"</u><i>- The Atlantic</i></a>
+    </br>
+    <div style="text-align:center;">
+    <%= image_tag("atlantic_logo.jpg") %>
+  </div>
+    </br>
+    <a href="http://latino.foxnews.com/latino/health/2016/10/20/obama-administration-lifts-medical-embargo-with-cuba-opening-floodgates-new/" style="font-size:16px;"><u>"U.S. Quietly Lifts Medical Embargo on Cuba, Opening Floodgates For New Drugs"</u><i>- Fox News</i></a>
+    </br>
+  </br>
+    <div style="text-align:center;">
+    <%= image_tag("fox_logo.jpg") %>
+    </div>
+    </br>
+    </br>
+    <a href="http://www.nytimes.com/2016/11/15/health/cancer-vaccine-cuba-medical-tourism.html" style="font-size:16px;"><u>"A New Chapter of Cancer Treatment"</u><i>- The New York Times</i></a>
+    </br>
+    </br>
+    <div style="text-align:center;">
+    <%= image_tag("NYT-logo.jpg") %>
+  </div>
+ 
+
+ </div>
+  
+  </div>
+</div>
+</div>
+</br>
+</br>

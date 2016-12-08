@@ -4,6 +4,7 @@
 
 // import fonts
 /*------ Google font imports -----*/
+@import url(//fonts.googleapis.com/css?family=Montserrat|Open+Sans);
 
 .container-fluid {
   padding: 0px;
@@ -34,55 +35,75 @@ html, body {
 // navbar
 
 .navbar {
-  margin: 0px;
-  background-color: white;
+  background-color: transparent;
+  background: transparent;
+  border-width: 0px;
+  margin-top: 30px;
   border-bottom: 1px;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
   padding-bottom: 5px;
-  padding-top: 5px;
+  padding-top: 75px;
   border-radius: 0px;
+  margin-left: 20px;
 }
 
 .navbar .navbar-header .navbar-brand {
   padding-left: 25px;
   font-size: 36px;
   font-size: 26px;
+  margin-left: 20px;
 }
 
 .navbar-container-right .navbar-right > li > a:visited {
-  color: black;
+  color: white;
 }
 
 .navbar-container-right .navbar-right > li > a {
   letter-spacing: .5px;
-  font-size: 13px;
   margin-top: 5px;
   border-radius: 0px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-container-right .nav-pills > li > a:hover {
   background-color: #093954;
-  border-radius: 10%;
   color: white;
 }
+
 
 
 ///// Impact Science Angels ////
 .image-container2 {
   background-image: 
     linear-gradient(
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.1)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),image-url('family_background.jpg');
   background-color: #093954;
-  height: 540px;
+  height: 580px;
   margin-top: 0px;
+  padding-top: 130px;
   background-attachment:fixed;
   background-size:cover;
-  margin-top: 0px;
-  color: #444;
+  margin-top: -80px;
+  font-size: 18px; 
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  h1 {
+      font-size: 42px;
+      font-family: 'Montserrat', sans-serif; 
+  }
+  a {
+  color: white;
+  }
+  a:hover {
+      color: white;
+      text-decoration: none;
+  }
 }
 
 /** about section for impact science angels **/
@@ -93,4 +114,53 @@ html, body {
   padding-right: 130px;
   padding-top: 40px;
   text-align: justify;
+}
+
+
+/// blahh ////
+.image-container1 {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),image-url('background2.jpg');
+  background-color: #093954;
+  height: 780px;
+  margin-top: 0px;
+  padding-top: 130px;
+  background-attachment:fixed;
+  background-size:cover;
+  margin-top: -80px;
+  font-size: 18px; 
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  h1 {
+      font-size: 42px;
+      font-family: 'Montserrat', sans-serif; 
+  }
+  a {
+  color: white;
+  }
+  a:hover {
+      color: white;
+      text-decoration: none;
+  }
+}
+
+
+
+/////more/////
+.image-container3 {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),image-url('background2.jpg');
+  background-color: #093954;
+  margin-top: 0px;
+  background-attachment:fixed;
+  background-size:cover;
+  margin-top: 0px;
+  color: white;
 }

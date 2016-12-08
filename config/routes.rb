@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root 'pages#home'
   resources :users
 
+  get "/cimavax" => "pages#cimavax", as: :cimavax
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -7,6 +7,38 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div style="margin-top:10px;">
+  <div class="navbar-header">
+      <a class="navbar-brand" style="color: #093954; font-family: 'Montserrat', sans-serif; margin-left: 25px;"><%= link_to image_tag("logo1.png", :style => "padding-top: 11px;"), '/' %></a>
+    </div>
+
+    <div class="navbar-container-right">
+      
+      <div class="collapse navbar-collapse", id="bs-example-navbar-collapse-1">
+
+        <ul class="nav nav-pills navbar-right" style="padding-right:25px;">
+
+          <li>  
+            <%= link_to 'Home', root_path %>
+          </li>
+          <li class="Treatments">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Treatments <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <%= link_to 'Cimavax', cimavax_path %>
+            </li>
+              <li>
+              <%= link_to 'Ovarian (Coming Soon)', '#' %>
+            </li>
+             <li>
+              <%= link_to 'Senolytics (Coming Soon)', '#' %>
+            </li>
+          </ul>
+  
+          
+        </ul>
+    </div>
+  </div>
 
 <%= yield %>
 
