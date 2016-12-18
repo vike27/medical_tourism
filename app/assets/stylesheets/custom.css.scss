@@ -118,6 +118,14 @@ html, body {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),image-url('family_background.jpg');
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
   background-color: #093954;
   height: 580px;
   margin-top: 0px;
