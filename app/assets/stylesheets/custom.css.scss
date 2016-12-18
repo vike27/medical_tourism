@@ -32,40 +32,77 @@ html, body {
   overflow-x: hidden;
 }
 
+// // navbar
+
+// .navbar {
+//   background-color: transparent;
+//   background: transparent;
+//   border-width: 0px;
+//   margin-top: 30px;
+//   border-bottom: 1px;
+//   border-top: 0px;
+//   border-left: 0px;
+//   border-right: 0px;
+//   padding-bottom: 5px;
+//   padding-top: 75px;
+//   border-radius: 0px;
+//   margin-left: 20px;
+// }
+
+// .navbar .navbar-header .navbar-brand {
+//   padding-left: 25px;
+//   font-size: 36px;
+//   font-size: 26px;
+//   margin-left: 20px;
+// }
+
+// .navbar-container-right .navbar-right > li > a:visited {
+//   color: white;
+// }
+
+// .navbar-container-right .navbar-right > li > a {
+//   letter-spacing: .5px;
+//   margin-top: 5px;
+//   border-radius: 0px;
+//   color: white;
+//   font-size: 16px;
+//   font-family: 'Montserrat', sans-serif;
+// }
+
+// .navbar-container-right .nav-pills > li > a:hover {
+//   background-color: #093954;
+//   color: white;
+// }
+
 // navbar
 
 .navbar {
-  background-color: transparent;
-  background: transparent;
-  border-width: 0px;
-  margin-top: 30px;
+  margin: 0px;
+  background-color: white;
   border-bottom: 1px;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
   padding-bottom: 5px;
-  padding-top: 75px;
+  padding-top: 5px;
   border-radius: 0px;
-  margin-left: 20px;
 }
 
 .navbar .navbar-header .navbar-brand {
   padding-left: 25px;
   font-size: 36px;
   font-size: 26px;
-  margin-left: 20px;
 }
 
 .navbar-container-right .navbar-right > li > a:visited {
-  color: white;
+  color: black;
 }
 
 .navbar-container-right .navbar-right > li > a {
   letter-spacing: .5px;
+  font-size: 13px;
   margin-top: 5px;
   border-radius: 0px;
-  color: white;
-  font-size: 16px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -73,8 +110,6 @@ html, body {
   background-color: #093954;
   color: white;
 }
-
-
 
 ///// Impact Science Angels ////
 .image-container2 {
