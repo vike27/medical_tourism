@@ -117,25 +117,15 @@ html, body {
     linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
-    ),image-url('family_background.jpg');
-    -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
+    ),image-url('background2.jpg');
   background-color: #093954;
-  height: 580px;
+  height: 600px;
   margin-top: 0px;
-  padding-top: 130px;
+  text-align: center;
   background-attachment:fixed;
   background-size:cover;
-  margin-top: -80px;
-  font-size: 18px; 
+  margin-top: 0px;
   color: white;
-  font-family: 'Open Sans', sans-serif;
   h1 {
       font-size: 42px;
       font-family: 'Montserrat', sans-serif; 
@@ -166,18 +156,15 @@ html, body {
     linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
-    ),image-url('background2.jpg');
+    ),image-url('family_background.jpg');
   background-color: #093954;
-  height: 780px;
+  height: 600px;
   margin-top: 0px;
-  padding-top: 130px;
+  padding-top: 30px;
   background-attachment:fixed;
   background-size:cover;
-  margin-top: -80px;
-  font-size: 18px; 
+  margin-top: 0px;
   color: white;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
   h1 {
       font-size: 42px;
       font-family: 'Montserrat', sans-serif; 
