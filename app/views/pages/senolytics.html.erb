@@ -1,0 +1,131 @@
+<div class="container-fluid home" style="" id="home">
+  <div class="image-container1">
+    </br>
+  
+    <div class="banner-content">
+      <div>
+       <% flash.each do |key, value| %>
+       <div class="alert alert-info" role="alert" style="width: 450px; margin-left:0px;"><%= value %></div>
+      <% end %>
+      </div>
+      <h1 style="font-size:26px; margin-left: 45px; line-height: 1.3; width: 720px; font-weight: 300;">Presenting the world’s leading treatment for optimizing human health, longevity, and performance.</h1>  
+      <h1 style="font-size:56px; margin-left: 45px; line-height: 1.05; width: 720px; font-weight: 100;">Senolytic Treatments</h1>
+      </br>
+    </div>
+  </div>
+
+<div id="about" class="container-fluid" id="about" style="padding-left: 50px;">
+  <div class="row">
+
+    <div class="col-md-6" id="main-about">
+      <h1 style="font-size: 30px; font-weight: 300; line-height: 1.2;">What if the effects of aging could be treated and prevented?</h1>
+      
+      <p style="font-size: 15px; line-height: 1.42857143; color: #333;">What if the diseases that appear so uniquely tied to the aging process - cancer, Alzheimer’s, heart disease, and so many others - could not just be delayed, but prevented entirely?
+      </p>
+    <p style="font-weight: 300; line-height: 1.4; font-size: 21px;">
+    What if you had the opportunity to not only manage the effects of the aging process - but also increase performance?</p>
+    <h1 style="font-size: 30px; font-weight: 300; line-height: 1.2;">Leading research says you can.</h1>
+    <p style="font-size: 15px; line-height: 1.42857143; color: #333;">In early 2016, breakthrough research¹ by top-tier healthcare provider Mayo Clinic revealed the world’s first “senolytic” treatment.
+    </p>
+    <p style="font-size: 15px; line-height: 1.42857143; color: #333;">By combining two unlikely substances - a common pharmaceutical and supplement - researchers discovered that the body could be cleared of the cells that most commonly lead to cancer, Alzheimer’s, and other diseases of aging - <b><i>senescent cells</b></i>.
+    </p>
+    <p style="font-weight: 300; line-height: 1.4; font-size: 21px;">Senescent cells are like “zombie” cells - while they once played a crucial role in healing the body, they are now leftover and obsolete. As we age, their numbers increase - and our health and performance suffers in turn.
+    </p>
+    <p style="font-size: 15px; line-height: 1.42857143; color: #333;">By periodically clearing out the zombie cells of the body, we can increase performance, prevent the diseases of aging, and sustain whole-body health.
+    </p>
+    <p style="font-size: 15px; line-height: 1.42857143; color: #333;">Peer-reviewed research2,3 shows that just one treatment provides the following results in just 5 days’ time, and lasts for up to six months:
+    </p>
+    <i><ul style="font-size: 15px; line-height: 1.42857143; color: #333;">
+      <li>Increased physical performance, endurance, and muscular strength</li>
+      <li>Increased cardiovascular health</li>
+      <li>Reduced physical frailty</li>
+      <li>Reduced inflammation</li>
+      <li>Reduced risk to chronic and fatal disease</li>
+      <li>Reduced risk of injury</li>
+      <li>Lifespan increases of up to 10 years</li>
+      <li>Reduced senescent cell count by up to 50%</li>
+    </ul>
+  </i>
+
+    <p style="font-size: 15px; line-height: 1.42857143; color: #333;"><b>Make no mistake, the long-lasting effects of just one treatment is nothing short of revolutionary.</b>
+    </p>
+    <p style="font-size: 15px; line-height: 1.42857143; color: #333;">With just one treatment, the cells of the body are radically changed - and lasting benefits to health, peak performance, and wellness begin in just 5 days.
+    </p>
+    <p style="font-size: 15px; line-height: 1.42857143; color: #333;">What’s more, periodic treatment has shown even greater possibilities for immediate - and lasting - effects.
+    </p>
+    <p style="font-size: 15px; line-height: 1.42857143; color: #333;">Make no mistake, the long-lasting effects of just one treatment is nothing short of revolutionary.
+    </p>
+    </div>                                     
+    
+    <div class="col-md-6" id="aside-about">
+      <h1 style="font-size: 26px; font-weight: 300; line-height: 1.2;">Whether you are looking to reduce the negative effects of aging - or just looking to improve peak performance - Senolytics can deliver.</h1>
+      <p style="font-size: 15px; line-height: 1.42857143; color: #333;"><b>Sign up today to learn more about Senolytics - what it is, how it works, and how you and your family can have access to this unique treatment.</b>
+      </p>
+      </br>
+      <div>
+       <% flash.each do |key, value| %>
+       <div class="alert alert-info" role="alert" style="width: 450px; margin-left:0px; font-size:12px; margin-bottom:10px;"><%= value %></div>
+      <% end %>
+      </div>
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fund.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :first_name, "First Name" %><br>
+    <%= f.text_field :first_name, class:"form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :last_name, "Last Name" %><br>
+    <%= f.text_field :last_name, class:"form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email %><br>
+    <%= f.text_field :email, class:"form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Get more information", class:"btn btn-lg btn-primary" %>
+  </div>
+  <p style="font-size:10px;">We will contact you with more information about CIMAVAX and how our process works.</p>
+<% end %>
+</br>
+  <div class="col-md-12">
+    <a href="http://www.theatlantic.com/health/archive/2016/11/cubas-lung-cancer-vaccine/505778/" style="font-size:16px;"><u>"Cuba's Innovative Cancer Vaccine Is Finally Coming to America"</u><i>- The Atlantic</i></a>
+    </br>
+    <div style="text-align:center;">
+    <%= image_tag("atlantic_logo.jpg") %>
+  </div>
+    </br>
+    <a href="http://latino.foxnews.com/latino/health/2016/10/20/obama-administration-lifts-medical-embargo-with-cuba-opening-floodgates-new/" style="font-size:16px;"><u>"U.S. Quietly Lifts Medical Embargo on Cuba, Opening Floodgates For New Drugs"</u><i>- Fox News</i></a>
+    </br>
+  </br>
+    <div style="text-align:center;">
+    <%= image_tag("fox_logo.jpg") %>
+    </div>
+    </br>
+    </br>
+    <a href="http://www.nytimes.com/2016/11/15/health/cancer-vaccine-cuba-medical-tourism.html" style="font-size:16px;"><u>"A New Chapter of Cancer Treatment"</u><i>- The New York Times</i></a>
+    </br>
+    </br>
+    <div style="text-align:center;">
+    <%= image_tag("NYT-logo.jpg") %>
+  </div>
+ 
+
+ </div>
+  
+  </div>
+</div>
+</div>
+</br>
+</br>

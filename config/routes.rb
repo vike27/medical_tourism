@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users
 
   get "/cimavax" => "pages#cimavax", as: :cimavax
+  get "/senolytics" => "pages#senolytics", as: :senolytics
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
