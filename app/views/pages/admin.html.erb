@@ -1,0 +1,28 @@
+<div class="container-fluid home" style="font-size:11px; padding-left:100px;" id="home">
+    </br>
+    </br>
+    </br>
+    <h1>Signups</h1>
+    </br>
+    </br>
+    <% @users.each do |u| %>
+      <b><%= u.first_name %> <%= u.last_name %></b></br>
+      Email: <%= u.email %></br>
+      Signup Date: <%= u.created_at.strftime("%B %d, %Y") %><br>
+      <% if u.cimavax? %>
+       Cimavax
+      <% elsif u.senolytics? %>
+       Senolytics
+      <% else %>
+       Did not specify treatment
+      <% end %>
+      <br>
+      </br>
+    <% end %>
+<br>
+      </br><br>
+      </br>
+</div>
+
+
+ 

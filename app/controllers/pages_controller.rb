@@ -12,6 +12,10 @@ class PagesController < ApplicationController
     @user = User.new
   end
 
+  def admin
+    @users = User.all
+  end
+
 private
 
   def user_params
