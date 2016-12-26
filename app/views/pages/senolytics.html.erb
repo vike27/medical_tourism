@@ -1,5 +1,5 @@
 <div class="container-fluid home" style="" id="home">
-  <div class="image-container1">
+  <div class="image-container4">
     </br>
   
     <div class="banner-content">
@@ -46,7 +46,7 @@
       <li>Reduced senescent cell count by up to 50%</li>
     </ul>
   </i>
-
+</br>
     <p style="font-size: 15px; line-height: 1.42857143; color: #333;"><b>Make no mistake, the long-lasting effects of just one treatment is nothing short of revolutionary.</b>
     </p>
     <p style="font-size: 15px; line-height: 1.42857143; color: #333;">With just one treatment, the cells of the body are radically changed - and lasting benefits to health, peak performance, and wellness begin in just 5 days.
@@ -79,7 +79,7 @@
       </ul>
     </div>
   <% end %>
-
+  <%= f.hidden_field :senolytics, :value => true %>
   <div class="form-group">
     <%= f.label :first_name, "First Name" %><br>
     <%= f.text_field :first_name, class:"form-control" %>
@@ -96,29 +96,21 @@
   <div class="actions">
     <%= f.submit "Get more information", class:"btn btn-lg btn-primary" %>
   </div>
-  <p style="font-size:10px;">We will contact you with more information about CIMAVAX and how our process works.</p>
+  <p style="font-size:10px;">We will contact you with more information about senolytic treatment options and how our process works.</p>
 <% end %>
 </br>
   <div class="col-md-12">
-    <a href="http://www.theatlantic.com/health/archive/2016/11/cubas-lung-cancer-vaccine/505778/" style="font-size:16px;"><u>"Cuba's Innovative Cancer Vaccine Is Finally Coming to America"</u><i>- The Atlantic</i></a>
+    <a href="http://www.theatlantic.com/health/archive/2016/11/cubas-lung-cancer-vaccine/505778/" style="font-size:16px;"><u>“A True Fountain Of Youth”</u><i> - Forbes Magazine</i></a>
     </br>
     <div style="text-align:center;">
-    <%= image_tag("atlantic_logo.jpg") %>
+    <%= image_tag("forbes_logo.jpg") %>
   </div>
     </br>
-    <a href="http://latino.foxnews.com/latino/health/2016/10/20/obama-administration-lifts-medical-embargo-with-cuba-opening-floodgates-new/" style="font-size:16px;"><u>"U.S. Quietly Lifts Medical Embargo on Cuba, Opening Floodgates For New Drugs"</u><i>- Fox News</i></a>
+    <a href="http://latino.foxnews.com/latino/health/2016/10/20/obama-administration-lifts-medical-embargo-with-cuba-opening-floodgates-new/" style="font-size:16px;"><u>“Scientists Have Confirmed…Purging Worn-Out - or Senescent - Cells Can Increase Longevity”</u><i> - Life Extension Magazine</i></a>
     </br>
   </br>
     <div style="text-align:center;">
-    <%= image_tag("fox_logo.jpg") %>
-    </div>
-    </br>
-    </br>
-    <a href="http://www.nytimes.com/2016/11/15/health/cancer-vaccine-cuba-medical-tourism.html" style="font-size:16px;"><u>"A New Chapter of Cancer Treatment"</u><i>- The New York Times</i></a>
-    </br>
-    </br>
-    <div style="text-align:center;">
-    <%= image_tag("NYT-logo.jpg") %>
+    <%= image_tag("LE_logo.png") %>
   </div>
  
 

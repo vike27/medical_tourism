@@ -73,7 +73,7 @@ html, body {
     linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
-    ),image-url('background2.jpg');
+    ),image-url('couple_banner.jpg');
   background-color: #093954;
   height: 600px;
   margin-top: 0px;
@@ -113,6 +113,35 @@ html, body {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),image-url('family_background.jpg');
+  background-color: #093954;
+  height: 600px;
+  margin-top: 0px;
+  padding-top: 30px;
+  background-attachment:fixed;
+  background-size:cover;
+  margin-top: 0px;
+  color: white;
+  h1 {
+      font-size: 42px;
+      font-family: 'Montserrat', sans-serif; 
+  }
+  a {
+  color: white;
+  }
+  a:hover {
+      color: white;
+      text-decoration: none;
+  }
+}
+
+
+// blah again senolytics //
+.image-container4 {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),image-url('front_banner1.jpg');
   background-color: #093954;
   height: 600px;
   margin-top: 0px;
