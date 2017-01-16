@@ -22,7 +22,7 @@ class PagesController < ApplicationController
 private
 
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :email, :phone, :cimavax, :senolytics)
+    params.require(:user).permit(:first_name, :last_name, :email, :telephone, :cimavax, :senolytics)
   end
 
 end

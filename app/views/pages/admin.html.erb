@@ -8,7 +8,7 @@
     <% @users.each do |u| %>
       <b><%= u.first_name %> <%= u.last_name %></b></br>
       Email: <%= u.email %></br>
-      Phone: <%= u.phone %></br>
+      Phone: <%= u.telephone %></br>
       Signup Date: <%= u.created_at.strftime("%B %d, %Y") %><br>
       <% if u.cimavax? %>
        Cimavax
