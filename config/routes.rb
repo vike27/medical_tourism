@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get "/cimavax" => "pages#cimavax", as: :cimavax
   get "/senolytics" => "pages#senolytics", as: :senolytics
+  get "/faq" => "pages#faq", as: :faq
   get "/admin" => "pages#admin", as: :admin
 
   # The priority is based upon order of creation: first created -> highest priority.

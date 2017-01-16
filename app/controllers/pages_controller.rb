@@ -16,6 +16,9 @@ class PagesController < ApplicationController
     @users = User.all
   end
 
+  def faq
+  end
+
 private
 
   def user_params
